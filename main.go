@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	//"github.com/exemorelli/golang-proyect/variables"
-	"runtime"
+	//"github.com/exemorelli/golang-project/variables"
+	"github.com/exemorelli/golang-project/ejercicios"
+	// "runtime"
 )
 
 func main() {
@@ -12,7 +13,7 @@ func main() {
 	/*estado, texto := variables.ConviertoaTexto(1612)
 	fmt.Println(estado, texto)*/
 
-	if os := runtime.GOOS; os == "linux" || os == "OS X." {
+	/*if os := runtime.GOOS; os == "linux" || os == "OS X." {
 		fmt.Println("Esto no es Windows, es ", os)
 	} else {
 		fmt.Println("Esto es Windows")
@@ -25,6 +26,9 @@ func main() {
 		fmt.Println("Esto es Darwin")
 	default:
 		fmt.Printf("%s \n", os)
-	}
+	}*/
 
+	palabra, mensaje := ejercicios.StringToInt("300")
+	fmt.Println(palabra)
+	fmt.Println(mensaje)
 }
